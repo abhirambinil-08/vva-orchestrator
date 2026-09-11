@@ -1,0 +1,16 @@
+{
+  "name": "democli",
+  "version": "1.0.0",
+  "description": "My developer CLI",
+  "main": "src/index.js",
+  "bin": {
+    "vva": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
