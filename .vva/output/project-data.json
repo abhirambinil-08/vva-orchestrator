@@ -1,0 +1,42 @@
+{
+  "repository": "VVA",
+  "branch": "main",
+  "latestCommit": "407f0c0 -  vva cli at the final stage",
+  "commits": [
+    {
+      "hash": "407f0c0",
+      "author": "abhirambinil-08",
+      "date": "2026-09-24 16:57:12 +0530",
+      "message": " vva cli at the final stage"
+    },
+    {
+      "hash": "b8c4a7a",
+      "author": "abhirambinil-08",
+      "date": "2026-09-24 16:56:13 +0530",
+      "message": " vva cli at the final stage"
+    },
+    {
+      "hash": "bb8a644",
+      "author": "abhirambinil-08",
+      "date": "2026-09-11 10:30:50 +0530",
+      "message": "vva started"
+    },
+    {
+      "hash": "d3ad223",
+      "author": "abhirambinil-08",
+      "date": "2026-09-11 10:29:56 +0530",
+      "message": "vva started"
+    }
+  ],
+  "changedFiles": [
+    {
+      "status": "D",
+      "file": "vva/.vva/config.json"
+    },
+    {
+      "status": "D",
+      "file": "vva/.vva/output/project-data.json"
+    }
+  ],
+  "diff": "diff --git a/vva/.vva/config.json b/vva/.vva/config.json\ndeleted file mode 100644\nindex 065009c..0000000\n--- a/vva/.vva/config.json\n+++ /dev/null\n@@ -1,5 +0,0 @@\n-{\n-  \"version\": \"1.0\",\n-  \"repository\": \"VVA\",\n-  \"defaultFormat\": \"pdf\"\n-}\n\\ No newline at end of file\ndiff --git a/vva/.vva/output/project-data.json b/vva/.vva/output/project-data.json\ndeleted file mode 100644\nindex 16086d1..0000000\n--- a/vva/.vva/output/project-data.json\n+++ /dev/null\n@@ -1,26 +0,0 @@\n-{\n-  \"repository\": \"VVA\",\n-  \"branch\": \"main\",\n-  \"latestCommit\": \"bb8a644 - vva started\",\n-  \"commits\": [\n-    {\n-      \"hash\": \"bb8a644\",\n-      \"author\": \"abhirambinil-08\",\n-      \"date\": \"2026-09-11 10:30:50 +0530\",\n-      \"message\": \"vva started\"\n-    },\n-    {\n-      \"hash\": \"d3ad223\",\n-      \"author\": \"abhirambinil-08\",\n-      \"date\": \"2026-09-11 10:29:56 +0530\",\n-      \"message\": \"vva started\"\n-    }\n-  ],\n-  \"changedFiles\": [\n-    {\n-      \"status\": \"D\",\n-      \"file\": \"vva/README.md\"\n-    }\n-  ],\n-  \"diff\": \"diff --git a/vva/README.md b/vva/README.md\\ndeleted file mode 100644\\nindex e69de29..0000000\"\n-}\n\\ No newline at end of file"
+}

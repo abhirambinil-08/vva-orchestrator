@@ -93,3 +93,13 @@ export function getChangedFiles() {
 export function getLatestDiff() {
     return runGit("diff HEAD~1 HEAD") || "";
 }
+
+export function getFileVersion(commitHash, filePath) {
+    return runGit(
+        `show ${commitHash}:${filePath}`
+    );
+}
+
+export function getLatestCommitHash() {
+    return runGit("rev-parse HEAD");
+}
