@@ -1,23 +1,34 @@
-import { runGit } from "../core/git.js";
+import fs from "fs";
+import path from "path";
 
-export async function report() {
+import { collectProjectData } from "../core/collector.js";
 
-    try {
+function report() {
+    const data = collectProjectData();
 
-        console.log("Analyzing repository...\n");
+    const outputDir = path.join(
+        process.cwd(),
+        ".vva",
+        "output"
+    );
 
-        const log = await runGit("log -10 --oneline");
+    fs.mkdirSync(outputDir, { recursive: true });
 
-        const diff = await runGit("diff HEAD~1 HEAD");
+    const outputFile = path.join(
+        outputDir,
+        "project-data.json"
+    );
 
-        console.log("Recent commits:");
-        console.log(log.stdout);
+    // Save project data
+    fs.writeFileSync(
+        outputFile,
+        JSON.stringify(data, null, 2)
+    );
 
-        console.log("\nChanges:");
-        console.log(diff.stdout);
-
-    } catch (error) {
-
-        console.error("Could not analyze repository.");
-    }
+    console.log("\nVVA Report Data\n");
+    console.log("✓ Git data collected");
+    console.log(`✓ Data saved to ${outputFile}`);
+    console.log();
 }
+
+export default report;

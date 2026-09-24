@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import {help} from "./commands/help.js";
-import {init} from "./commands/init.js";
-import {status} from "./commands/status.js";
-import {report} from "./commands/report.js";
+import init from "./commands/init.js";
+import status from "./commands/status.js";
+import report from "./commands/report.js";
 import {unknown_command} from "./commands/unknown_command.js";
 
 const args = process.argv.slice(2);
